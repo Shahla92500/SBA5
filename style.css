@@ -1,0 +1,97 @@
+body{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* #postForm{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: 2px;
+} */
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+  /* width: 10rem; */
+}
+#textZone{
+    display:flex;
+    flex-direction: column;    
+}
+#textfields{
+    display:flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+/* .header{
+    display: flex;
+    flex-direction: row;
+} */
+.topSection{
+  display: grid;                    
+  grid-template-columns: 1fr auto; 
+  align-items: start;   
+  gap: 30px;
+  align-items: start; 
+   max-width: 640px;   
+}
+#btn-photo{
+    font-weight: bold;
+    width: 20px; 
+    cursor: pointer;
+    display: grid; 
+    align-items: end;      
+    gap: 16px;
+    width: 10rem;       
+
+}
+#postsContainer{
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto; /* I put content to left and the buttons to right  */
+  align-items: start;          
+  gap: 16px;
+  border: 2px solid #333;          
+  padding: 16px;
+  max-width: 640px;          
+  max-height: 100%; 
+}
+.post-header{ display:flex; justify-content:space-between; align-items:center; }
+ #postActions{
+  display: grid;
+  gap: 12px;
+  justify-items: end;
+}
+#postsContainer .post h3{ margin: 0 0 8px; }
+
+.photo-panel{ display:grid; gap:12px; justify-items:center; }
+
+.myPhoto{
+  width: 64px;             /*  width ≠ height of OVAL */
+  height: 90px;
+  border: 2px solid #333;
+  border-radius: 50%;      /* an ellipse */
+  background: #eee;       
+  overflow: hidden;        /* clip preview image to the oval */
+}
+.myPhoto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* fill the oval */
+}
+#Edit{  
+    background:#cfe9cf; 
+}
+#Delete{
+    background:#f2c5c3; 
+}
+#Delete, #submitBtn , #Edit{
+
+    width: 60px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive Registration Form</title>
+</head>
+<body containter="Main page">
+  <div class="container">
+    <h1>Post your topics</h1>
+    <form id="postForm"  novalidate>
+        <section class="topSection">  <!-- Create a section for the new post form (including input for title, textarea for content, and a submit button). -->
+            <div id="textfields" >
+                <div>
+                    <label for="postInput">Post title</label>
+                    <span class="label" id = "msgErrPostIn"></span>
+                    <input id="postInput" type="text" placeholder="Post Title" maxlength="50" size="40" >
+                </div>
+                <div id="textZone">
+                    <label for="content">Post  (max 250 chars)</label>
+                    <span class="label" id = "msgErrContentT"></span>
+                    <textarea name="content" id="content" maxlength="250" cols="40" rows="6">Content Text</textarea>
+                </div>
+            </div>
+            <div id="btn-photo" >
+                <div class="photo-panel">
+                    <img class="myPhoto" src="myImage.png" alt="myImage" style="width:100px;height:100px;">
+                    <button id="submitBtn" type="submit">Submit</button>
+            </div>
+        </section>  
+        <section Content Text>  <!-- Create a section where the list of blog posts will be displayed dynamically. -->
+
+            <h2>Posts</h2>
+            <div class="topSection" id="postsContainer" >
+                <div class="post"> <!-- Container to hold the dynamically added posts -->
+                    <ul id="postItems">
+                        <!-- This is structure of a post item -->
+                        <!-- <li class="postItem">
+                             <h3>Post Title</h3>
+                             <p>Post content goes here...</p>
+                        </li> -->
+                    </ul>
+                </div>  
+                <div id="postActions">
+                    <button id="Edit">Edit</button>
+                    <button id="Delete">Delete</button>
+                </div>
+            </div>
+        </section> 
+    </form>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    
