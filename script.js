@@ -51,7 +51,9 @@ function render(){
         console.log('in render posts: ', post);
         let li = document.createElement('li');
         li.className = 'postItem';
-        li.innerHTML = `<h3>${post.title} <p> ${post.content}</p></h3>`;
+        li.innerHTML = `
+         <div class='postItem'>
+        <h3>${post.title} </h3> <p> ${post.content}</p> </div>`;
         postList.appendChild(li);
     }
 }

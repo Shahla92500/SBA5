@@ -75,8 +75,15 @@ button[type="submit"]:hover {
 
 .postItem {
   display: flex;
-  flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+gap: 20px;
+  /* flex-direction: row; */
   margin: 1px;
+}
+.post{
+  display: flex;
+  align-items: flex-start;
 }
 #postsContainer .post h3{ margin: 0 0 8px; }
 
